@@ -1,0 +1,30 @@
+# Visual Studio
+.vs/
+
+# Build result
+DatabaseTestSol/bin/
+DatabaseTestSol/obj/
+
+Portafolio.Core.BLL/bin/
+Portafolio.Core.BLL/obj/
+
+Portafolio.Core.Common/bin/
+Portafolio.Core.Common/obj/
+
+Portafolio.Core.DAL/bin/
+Portafolio.Core.DAL/obj/
+
+TestSol/bin/
+TestSol/obj/
+
+TestSolAPI/bin/
+TestSolAPI/obj/
+
+TestSolWFA/bin/
+TestSolWFA/obj/
+
+#Visual Studio Code
+.vscode
+
+# User-specific files
+*.suo

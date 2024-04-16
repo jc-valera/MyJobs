@@ -1,0 +1,57 @@
+﻿@model TestSol.Models.Entities.Employee
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Editar Empleado</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                Nombre:
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                Apellido Paterno:
+                <input asp-for="FirstSurname" class="form-control" />
+                <span asp-validation-for="FirstSurname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                Apellido Materno:
+                <input asp-for="SecondSurname" class="form-control" />
+                <span asp-validation-for="SecondSurname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                Area:
+                <input asp-for="Area" class="form-control" />
+                <span asp-validation-for="Area" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                Fecha de Nacimeinto:
+                <input asp-for="BirthDate" type="date" class="form-control" />
+                <span asp-validation-for="BirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                Salario:
+                <input asp-for="Salary" class="form-control" />
+                <span asp-validation-for="Salary" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Actualizar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-secondary" asp-action="Index">Regresar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

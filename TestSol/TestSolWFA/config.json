@@ -1,0 +1,5 @@
+{
+  "AppConfig": {
+    "TestSolApi": "http://localhost/TestSol/api/employee"
+  }
+}
